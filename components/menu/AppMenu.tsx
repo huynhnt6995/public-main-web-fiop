@@ -3,9 +3,9 @@ import Link from "next/link";
 import styled from "styled-components";
 import { HEIGHT_MENU_APP } from "../../constants";
 import { useRouter } from "next/router";
-import Button from "react-bootstrap/Button";
 import { PageLayout } from "../layout/PageLayout";
 import { MenuItem, MENU_DATA } from "../../constants/menu";
+import { PriamyButton } from "../button/PriamyButton";
 
 const activeLinkStyle = (path: string, href: string): React.CSSProperties => {
     return path === href
@@ -54,7 +54,10 @@ export const AppMenu = () => {
                     ))}
                 </MenuWrap>
                 <LoginButtonWrap className="col-md-2">
-                    <LoginButton>login</LoginButton>
+                    <PriamyButton
+                        label="Login"
+                        styles={{ paddingTop: 5, paddingBottom: 5 }}
+                    />
                 </LoginButtonWrap>
             </Wrapper>
         </PageLayout>
@@ -77,14 +80,6 @@ const Logo = styled.img`
 
 const LoginButtonWrap = styled.div`
     text-align: right;
-`;
-
-const LoginButton = styled(Button)`
-    background-image: linear-gradient(180deg, #6065ea, #3a3ea6);
-    border: 0px;
-    border-radius: 9px;
-    height: 36px;
-    padding: 0px 20px;
 `;
 
 const ItemMenuLabel = styled.a`
