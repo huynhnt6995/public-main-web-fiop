@@ -44,8 +44,9 @@ export const Cloud = () => {
                         <div
                             className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3"
                             style={{ marginTop: 20 }}
+                            key={service.title}
                         >
-                            <WrapperService key={service.imgUrl}>
+                            <WrapperService>
                                 <ServiceImage src={service.imgUrl} />
                                 <ServiceTitle>{service.title}</ServiceTitle>
                                 <ServiceCotent>
