@@ -39,7 +39,7 @@ const ListContent = () => {
                         <div className="row">
                             {companies.map((company) => (
                                 <div
-                                    className="col-4 col-sm-3 col-lg-2"
+                                    className="col-6 col-sm-3 col-lg-2"
                                     key={company}
                                 >
                                     <CompanyImage src={company} />
