@@ -60,6 +60,7 @@ const Wrapper = styled.div`
 
 const BackgroundImg = styled.img`
     width: 100%;
+    min-height: 300px;
 `;
 
 const CompanyImage = styled.img`
