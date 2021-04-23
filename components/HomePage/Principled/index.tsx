@@ -24,7 +24,7 @@ const principledData: PrincipledModel[] = [
     {
         title: "Point-of-sale",
         discription:
-            "We've generalized point-of-sale to point-of-event. Access control, barcode scanners, retail sales..",
+            "We've generalized point-of-sale to point-of-event. Access control, barcode scanners, retail sales...",
         imgUrl: "assets/images/img_point_of_sale.png",
         buttonLabel: "Contact us",
         handleClick: () => {},
@@ -74,7 +74,7 @@ export const Principled = () => {
             <div className="row justify-content-center">
                 <div
                     className="col-12 col-sm-4 col-lg-3"
-                    style={{ marginTop: 30, marginRight: 10, marginLeft: 10 }}
+                    style={{ marginTop: 30, marginRight: 5, marginLeft: 5 }}
                 >
                     <WrapperService>
                         <IndustryImage src="assets/images/img_surveillance_notify.png" />
@@ -105,8 +105,8 @@ export const Principled = () => {
                         className="col-12 col-sm-4 col-lg-3"
                         style={{
                             marginTop: 30,
-                            marginRight: 10,
-                            marginLeft: 10,
+                            marginRight: 5,
+                            marginLeft: 5,
                         }}
                         key={principled.title}
                     >
