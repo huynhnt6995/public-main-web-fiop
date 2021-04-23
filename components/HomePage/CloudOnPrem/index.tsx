@@ -47,10 +47,7 @@ export const CloudOnPrem = () => {
                     width: "100%",
                 }}
             >
-                <img
-                    src="assets/images/img_background_dot.png"
-                    style={{ width: "100%", height: "90%" }}
-                />
+                <DotBackground src="assets/images/img_background_dot.png" />
             </div>
             <PageLayout>
                 <div>
@@ -77,7 +74,7 @@ export const CloudOnPrem = () => {
 
 const Wrapper = styled.div`
     position: relative;
-    margin-top: 100px;
+    margin: 100px 0px;
 `;
 
 const CloudOnPremContent = styled.div`
@@ -96,4 +93,14 @@ const CameraPageImg = styled.img`
     width: 100%;
     border-radius: 28px;
     box-shadow: 0px 3px 13px 1px rgba(0, 0, 0, 0.2);
+`;
+
+const DotBackground = styled.img`
+    width: 100%;
+    @media (min-width: 375px) {
+        height: 95%;
+    }
+    @media (min-width: 980px) {
+        height: 80%;
+    }
 `;
