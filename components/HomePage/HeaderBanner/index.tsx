@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { BACKGROUND_COLOR_PRIMARY } from "../../../public/assets/color";
 import { PriamyButton } from "../../button/PriamyButton";
 import { PageLayout } from "../../layout/PageLayout";
 
