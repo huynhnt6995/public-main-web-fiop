@@ -14,8 +14,8 @@ export const ContactForm = () => {
                         height: "100%",
                         justifyContent: "center",
                         alignItems: "center",
-                        paddingTop: 50,
-                        paddingBottom: 50,
+                        paddingTop: 80,
+                        paddingBottom: 80,
                     }}
                 >
                     <Title>
