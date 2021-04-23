@@ -29,7 +29,6 @@ const WrapperService = styled.div`
 
 const IndustryImage = styled.img`
     margin-bottom: 30px;
-    margin-right: 300px;
     width: 100%;
     border-radius: 8px 80px 8px 8px;
 `;

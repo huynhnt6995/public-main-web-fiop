@@ -44,7 +44,7 @@ const industryConceptData: IndustryConceptModel[] = [
 
 export const IndustryConcepts = () => {
     return (
-        <PageLayout>
+        <PageLayout containerStyle={{ paddingTop: 80, paddingBottom: 80 }}>
             <div>
                 <Title>Industry concepts</Title>
                 <div className="row justify-content-center">
@@ -68,5 +68,5 @@ const Title = styled.p`
     font-weight: 500;
     font-size: 36px;
     color: #303030;
-    text-align: left;
+    text-align: center;
 `;
