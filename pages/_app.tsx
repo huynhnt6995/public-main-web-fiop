@@ -4,11 +4,12 @@ import React from "react";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AppFooter } from "../components/layout/AppFooter";
+import { AppMenu } from "../components/menu/AppMenu";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <div>
-            {/* <AppMenu /> */}
+            <AppMenu />
             <Component {...pageProps} />
             <AppFooter />
         </div>

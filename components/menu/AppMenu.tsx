@@ -4,13 +4,14 @@ import styled from "styled-components";
 import { HEIGHT_MENU_APP } from "../../constants";
 import { useRouter } from "next/router";
 import { PageLayout } from "../layout/PageLayout";
-import { MenuItem, MENU_DATA } from "../../constants/menu";
+import { MenuItemModel, MENU_DATA } from "../../constants/menu";
 import { PriamyButton } from "../button/PriamyButton";
 
 const activeLinkStyle = (path: string, href: string): React.CSSProperties => {
     return path === href
         ? {
               color: "#017FFF",
+              backgroundColor: path === "/" ? "#FFF" : "#EDEDED",
           }
         : {
               color: "#000000",
@@ -31,7 +32,7 @@ export const AppMenu = () => {
     return (
         <PageLayout containerStyle={menuStyle}>
             <Wrapper>
-                <div className="col-md-2">
+                <div className="col-md-2 align-self-center">
                     <Link href="/">
                         <a style={activeLinkStyle(route.pathname, "/")}>
                             <Logo src="assets/images/img_logo.png" />
@@ -39,7 +40,7 @@ export const AppMenu = () => {
                     </Link>
                 </div>
                 <MenuWrap className="col-12 col-sm-8 col-md-8">
-                    {MENU_DATA.map((menu: MenuItem) => (
+                    {MENU_DATA.map((menu: MenuItemModel) => (
                         <Link href={menu.link} key={menu.link}>
                             <ItemMenuLabel
                                 className="item-menu-label"
@@ -53,7 +54,7 @@ export const AppMenu = () => {
                         </Link>
                     ))}
                 </MenuWrap>
-                <LoginButtonWrap className="col-md-2">
+                <LoginButtonWrap className="col-md-2 align-self-center">
                     <PriamyButton
                         label="Login"
                         styles={{ paddingTop: 5, paddingBottom: 5 }}
@@ -72,6 +73,9 @@ const Wrapper = styled.div`
 const MenuWrap = styled.div`
     text-align: center;
     line-height: 2.2;
+    margin: 0px;
+    padding: 0px;
+    height: ${HEIGHT_MENU_APP}px;
 `;
 
 const Logo = styled.img`
@@ -87,5 +91,10 @@ const ItemMenuLabel = styled.a`
     cursor: pointer;
     text-decoration: none !important;
     height: ${HEIGHT_MENU_APP}px;
-    margin: 5px 15px;
+    padding: 15px 15px;
+    margin: 0px 1px;
+    display: inline-block;
+    &:hover {
+        background-color: #ededed;
+    }
 `;
