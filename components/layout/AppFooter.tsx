@@ -64,80 +64,89 @@ const navigationItems: FooterItemNav[] = [
 
 export const AppFooter = () => {
     return (
-        <PageLayout containerStyle={{ paddingTop: 30, paddingBottom: 50 }}>
-            <div className="row">
-                <div
-                    className="col-12 col-sm-6 col-xl-4"
-                    style={{ paddingRight: 20 }}
-                >
-                    <img
-                        src="/assets/images/img_logo.png"
-                        style={{ width: 141, height: 38 }}
-                    />
-                    <FooterItemLabel>
-                        Developing innovative solutions that solve complex
-                        problems by learning from and listening to our partners
-                        and customers.
-                    </FooterItemLabel>
-                    <div className="d-flex align-self-start">
-                        {socialNavigations.map((social) => (
+        <div>
+            <PageLayout
+                containerStyle={{
+                    paddingTop: 30,
+                    paddingBottom: 50,
+                    borderBottom: "1px solid #F1F1F1",
+                }}
+            >
+                <div className="row">
+                    <div
+                        className="col-12 col-sm-6 col-xl-4"
+                        style={{ paddingRight: 20 }}
+                    >
+                        <img
+                            src="/assets/images/img_logo.png"
+                            style={{ width: 141, height: 38 }}
+                        />
+                        <FooterItemLabel>
+                            Developing innovative solutions that solve complex
+                            problems by learning from and listening to our
+                            partners and customers.
+                        </FooterItemLabel>
+                        <div className="d-flex align-self-start">
+                            {socialNavigations.map((social) => (
+                                <img
+                                    src={social.iconUrl}
+                                    key={social.iconUrl}
+                                    style={{ ...social.style, marginRight: 15 }}
+                                />
+                            ))}
+                        </div>
+                        <div
+                            className="d-flex align-items-center"
+                            style={{ marginTop: 20 }}
+                        >
                             <img
-                                src={social.iconUrl}
-                                key={social.iconUrl}
-                                style={{ ...social.style, marginRight: 15 }}
+                                src="assets/icons/ic_mail.png"
+                                style={{ width: 14, height: 10 }}
                             />
+                            <MailLabel>connect@broadflow.co</MailLabel>
+                        </div>
+                    </div>
+                    <div
+                        className="col-12 col-sm-6 col-xl-2"
+                        style={{ paddingRight: 20 }}
+                    >
+                        <FooterItemTitle>Industry</FooterItemTitle>
+                        {industryNavidations.map((industry) => (
+                            <FooterItemLabel>{industry.label}</FooterItemLabel>
                         ))}
                     </div>
                     <div
-                        className="d-flex align-items-center"
-                        style={{ marginTop: 20 }}
+                        className="col-12 col-sm-6 col-xl-3"
+                        style={{ paddingRight: 20 }}
                     >
-                        <img
-                            src="assets/icons/ic_mail.png"
-                            style={{ width: 14, height: 10 }}
-                        />
-                        <MailLabel>connect@broadflow.co</MailLabel>
-                    </div>
-                </div>
-                <div
-                    className="col-12 col-sm-6 col-xl-2"
-                    style={{ paddingRight: 20 }}
-                >
-                    <FooterItemTitle>Industry</FooterItemTitle>
-                    {industryNavidations.map((industry) => (
-                        <FooterItemLabel>{industry.label}</FooterItemLabel>
-                    ))}
-                </div>
-                <div
-                    className="col-12 col-sm-6 col-xl-3"
-                    style={{ paddingRight: 20 }}
-                >
-                    <FooterItemTitle>Solutions</FooterItemTitle>
-                    {solutionNavidations.map((industry) => (
-                        <FooterItemLabel>{industry.label}</FooterItemLabel>
-                    ))}
-                </div>
-                <div
-                    className="col-12 col-sm-6 col-xl-3"
-                    style={{ paddingRight: 20 }}
-                >
-                    <FooterItemTitle>Navigation</FooterItemTitle>
-                    <div className="row">
-                        {navigationItems.map((nav) => (
-                            <div className="col-6">
-                                <FooterItemLabel
-                                    style={{
-                                        marginTop: 1,
-                                    }}
-                                >
-                                    {nav.label}
-                                </FooterItemLabel>
-                            </div>
+                        <FooterItemTitle>Solutions</FooterItemTitle>
+                        {solutionNavidations.map((industry) => (
+                            <FooterItemLabel>{industry.label}</FooterItemLabel>
                         ))}
                     </div>
+                    <div
+                        className="col-12 col-sm-6 col-xl-3"
+                        style={{ paddingRight: 20 }}
+                    >
+                        <FooterItemTitle>Navigation</FooterItemTitle>
+                        <div className="row">
+                            {navigationItems.map((nav) => (
+                                <div className="col-6">
+                                    <FooterItemLabel
+                                        style={{
+                                            marginTop: 1,
+                                        }}
+                                    >
+                                        {nav.label}
+                                    </FooterItemLabel>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </PageLayout>
+            </PageLayout>
+            <License>Copyright by 2021 Broadflow Corp</License>
+        </div>
     );
 };
 
@@ -168,4 +177,13 @@ const MailLabel = styled.label`
     letter-spacing: -0.3px;
     color: #303030;
     margin: 0px 0px 0px 10px;
+`;
+
+const License = styled.p`
+    font-family: "Poppins";
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #808080;
 `;
