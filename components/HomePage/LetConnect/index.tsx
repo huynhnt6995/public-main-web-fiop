@@ -24,13 +24,12 @@ export const LetConnect = () => {
                 <Form
                     style={{
                         display: "flex",
-                        minWidth: 350,
                         justifyContent: "center",
                     }}
                 >
                     <Form.Group
                         controlId="formBasicEmail"
-                        style={{ width: "35%", minWidth: 320 }}
+                        style={{ width: "35%", minWidth: 150 }}
                     >
                         <Form.Control
                             style={{ borderRadius: 9 }}
