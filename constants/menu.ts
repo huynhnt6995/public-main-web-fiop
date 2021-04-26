@@ -3,21 +3,21 @@ export interface MenuItemModel {
     name: string;
 }
 export const MENU_DATA: MenuItemModel[] = [
-    { link: "/industry", name: "Industry" },
+    { link: "/industry", name: "menu.industry" },
     {
         link: "/technology",
-        name: "Technology",
+        name: "menu.technology",
     },
     {
         link: "/solution",
-        name: "Solution",
+        name: "menu.solution",
     },
     {
         link: "/blog",
-        name: "Blog",
+        name: "menu.blog",
     },
     {
         link: "/pricing",
-        name: "Pricing",
+        name: "menu.pricing",
     },
 ];

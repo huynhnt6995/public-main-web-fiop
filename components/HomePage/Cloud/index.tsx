@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 
@@ -10,35 +11,32 @@ interface CloudService {
 const cloudServices: CloudService[] = [
     {
         imgUrl: "assets/images/img_cloud_cross_platform.png",
-        title: "Device Notifications",
-        discription:
-            "Configure your cameras and devices with SMTP settings right out of the box.",
+        title: "home_page.device_notifications_title",
+        discription: "home_page.device_notifications_content",
     },
     {
         imgUrl: "assets/images/img_cloud_notification.png",
-        discription:
-            "Securely record and livestream your security cameras over the cloud with end-to-end encryption.",
-        title: "Cloud Surveillance",
+        discription: "home_page.cloud_notifications_content",
+        title: "home_page.cloud_notifications_title",
     },
     {
         imgUrl: "assets/images/img_cloud_point_of_event.png",
-        discription:
-            "Treating devices as abstract objects in software opens up new possibilities.",
-        title: "Cross-platform Integration",
+        discription: "home_page.cross_platform_content",
+        title: "home_page.cross_platform_title",
     },
     {
         imgUrl: "assets/images/img_cloud_serveillance.png",
-        discription:
-            "We've generalized point-of-sale to point-of-event. Access control, barcode scanners, retail sales..",
-        title: "Point-of-Event",
+        discription: "home_page.cloud_serveillance_content",
+        title: "home_page.cloud_serveillance_title",
     },
 ];
 
 export const Cloud = () => {
+    const { t } = useTranslation();
     return (
         <PageLayout>
             <div style={{ textAlign: "center" }}>
-                <Title>Manage your device stack in the cloud</Title>
+                <Title>{t("home_page.cloud_title")}</Title>
                 <div className="row">
                     {cloudServices.map((service) => (
                         <div
@@ -48,9 +46,9 @@ export const Cloud = () => {
                         >
                             <WrapperService>
                                 <ServiceImage src={service.imgUrl} />
-                                <ServiceTitle>{service.title}</ServiceTitle>
+                                <ServiceTitle>{t(service.title)}</ServiceTitle>
                                 <ServiceCotent>
-                                    {service.discription}
+                                    {t(service.discription)}
                                 </ServiceCotent>
                             </WrapperService>
                         </div>

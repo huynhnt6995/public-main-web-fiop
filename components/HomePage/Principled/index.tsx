@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PriamyButton } from "../../button/PriamyButton";
 import { PageLayout } from "../../layout/PageLayout";
@@ -14,48 +15,45 @@ export interface PrincipledModel {
 
 const principledData: PrincipledModel[] = [
     {
-        title: "Access Control Integration",
-        discription:
-            "A short description that let the customer know about this product. Keep it in 3 rows",
+        title: "home_page.access_control_intergration",
+        discription: "home_page.access_control_intergration_content",
         imgUrl: "assets/images/img_control.png",
-        buttonLabel: "Contact us",
+        buttonLabel: "button.contact_us",
         handleClick: () => {},
     },
     {
-        title: "Point-of-sale",
-        discription:
-            "We've generalized point-of-sale to point-of-event. Access control, barcode scanners, retail sales...",
+        title: "home_page.point_of_sale",
+        discription: "home_page.point_of_sale_content",
         imgUrl: "assets/images/img_point_of_sale.png",
-        buttonLabel: "Contact us",
+        buttonLabel: "button.contact_us",
         handleClick: () => {},
     },
     {
-        title: "Video Package Search",
+        title: "home_page.video_package_search",
         discription:
             "A short description that let the customer know about this product. Keep it in 3 rows",
         imgUrl: "assets/images/img_video_package.png",
-        buttonLabel: "Contact us",
+        buttonLabel: "button.contact_us",
         handleClick: () => {},
     },
     {
-        title: "Livestream into your Website",
-        discription:
-            "A short description that let the customer know about this product. Keep it in 3 rows",
+        title: "home_page.livestream",
+        discription: "home_page.livestream_content",
         imgUrl: "assets/images/img_livestream.png",
-        buttonLabel: "Contact us",
+        buttonLabel: "button.contact_us",
         handleClick: () => {},
     },
     {
-        title: "Custom solution for enterprise",
-        discription:
-            "A short description that let the customer know about this product. Keep it in 3 rows",
+        title: "home_page.custom_solution",
+        discription: "home_page.custom_solution_content",
         imgUrl: "assets/images/img_custom.png",
-        buttonLabel: "Contact us",
+        buttonLabel: "button.contact_us",
         handleClick: () => {},
     },
 ];
 
 export const Principled = () => {
+    const { t } = useTranslation();
     return (
         <PageLayout
             containerStyle={{
@@ -65,10 +63,9 @@ export const Principled = () => {
             }}
         >
             <div className="col align-self-center">
-                <Title>Principled Product Development</Title>
+                <Title>{t("home_page.principled_product_developent")}</Title>
                 <Discription>
-                    {`No-fluff security and management solutions delivered
-                    directly to SMB & enterprise customers`}
+                    {t("home_page.principled_product_developent_content")}
                 </Discription>
             </div>
             <div className="row justify-content-center">
@@ -78,10 +75,15 @@ export const Principled = () => {
                 >
                     <WrapperService>
                         <IndustryImage src="assets/images/img_surveillance_notify.png" />
-                        <IndustryTitle>{`Cloud surveillance & Device Notifcation`}</IndustryTitle>
+                        <IndustryTitle>
+                            {t(
+                                "home_page.cloud_surveillance_and_device_notification"
+                            )}
+                        </IndustryTitle>
                         <IndustryCotent>
-                            A short description that let the customer know about
-                            this product. Keep it in 3 rows"
+                            {t(
+                                "home_page.cloud_surveillance_and_device_notification_content"
+                            )}
                         </IndustryCotent>
                         <PriamyButton
                             label="Get your free account"

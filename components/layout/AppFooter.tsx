@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "./PageLayout";
 
@@ -34,35 +35,36 @@ const socialNavigations: SocialNav[] = [
 ];
 
 const industryNavidations: FooterItemNav[] = [
-    { label: "Cannabis Dispensary", nav: "" },
-    { label: "Shipping & Logistics", nav: "" },
-    { label: "Retail", nav: "" },
-    { label: "Banking", nav: "" },
-    { label: "Enterprise Solutions", nav: "" },
+    { label: "footer_app.cannabis_dispensary", nav: "" },
+    { label: "footer_app.shipping_and_logistic", nav: "" },
+    { label: "footer_app.retail", nav: "" },
+    { label: "footer_app.banking", nav: "" },
+    { label: "footer_app.enterprise_solutions", nav: "" },
 ];
 
 const solutionNavidations: FooterItemNav[] = [
-    { label: "Device Notifications", nav: "" },
-    { label: "Cloud Surveillance", nav: "" },
-    { label: "Access Control Integration", nav: "" },
-    { label: "Package Video Search", nav: "" },
-    { label: "Livestream into your Website", nav: "" },
+    { label: "footer_app.device_notification", nav: "" },
+    { label: "footer_app.cloud_surveillance", nav: "" },
+    { label: "footer_app.access_control_integration", nav: "" },
+    { label: "footer_app.video_package_search", nav: "" },
+    { label: "footer_app.live_stream_into_website", nav: "" },
 ];
 
 const navigationItems: FooterItemNav[] = [
-    { label: "Home", nav: "" },
-    { label: "Technology", nav: "" },
-    { label: "Blog", nav: "" },
-    { label: "Pricing", nav: "" },
-    { label: "Contac Us", nav: "" },
-    { label: "About Us", nav: "" },
-    { label: "Help center", nav: "" },
-    { label: "Term of use", nav: "" },
-    { label: "Privacy", nav: "" },
-    { label: "Login", nav: "" },
+    { label: "menu.home", nav: "" },
+    { label: "menu.technology", nav: "" },
+    { label: "menu.blog", nav: "" },
+    { label: "menu.pricing", nav: "" },
+    { label: "menu.contact_us", nav: "" },
+    { label: "menu.about_us", nav: "" },
+    { label: "menu.help_center", nav: "" },
+    { label: "menu.term_of_use", nav: "" },
+    { label: "menu.privacy", nav: "" },
+    { label: "menu.login", nav: "" },
 ];
 
 export const AppFooter = () => {
+    const { t } = useTranslation();
     return (
         <div>
             <PageLayout
@@ -82,9 +84,7 @@ export const AppFooter = () => {
                             style={{ width: 141, height: 38 }}
                         />
                         <FooterItemLabel>
-                            Developing innovative solutions that solve complex
-                            problems by learning from and listening to our
-                            partners and customers.
+                            {t("footer_app.discription")}
                         </FooterItemLabel>
                         <div className="d-flex align-self-start">
                             {socialNavigations.map((social) => (
@@ -110,34 +110,44 @@ export const AppFooter = () => {
                         className="col-12 col-sm-6 col-xl-2"
                         style={{ paddingRight: 20 }}
                     >
-                        <FooterItemTitle>Industry</FooterItemTitle>
+                        <FooterItemTitle>
+                            {t("footer_app.industry")}
+                        </FooterItemTitle>
                         {industryNavidations.map((industry) => (
-                            <FooterItemLabel>{industry.label}</FooterItemLabel>
+                            <FooterItemLabel key={industry.label}>
+                                {t(industry.label)}
+                            </FooterItemLabel>
                         ))}
                     </div>
                     <div
                         className="col-12 col-sm-6 col-xl-3"
                         style={{ paddingRight: 20 }}
                     >
-                        <FooterItemTitle>Solutions</FooterItemTitle>
+                        <FooterItemTitle>
+                            {t("footer_app.solutions")}
+                        </FooterItemTitle>
                         {solutionNavidations.map((industry) => (
-                            <FooterItemLabel>{industry.label}</FooterItemLabel>
+                            <FooterItemLabel key={industry.label}>
+                                {t(industry.label)}
+                            </FooterItemLabel>
                         ))}
                     </div>
                     <div
                         className="col-12 col-sm-6 col-xl-3"
                         style={{ paddingRight: 20 }}
                     >
-                        <FooterItemTitle>Navigation</FooterItemTitle>
+                        <FooterItemTitle>
+                            {t("footer_app.navigation")}
+                        </FooterItemTitle>
                         <div className="row">
                             {navigationItems.map((nav) => (
-                                <div className="col-6">
+                                <div className="col-6" key={nav.label}>
                                     <FooterItemLabel
                                         style={{
                                             marginTop: 1,
                                         }}
                                     >
-                                        {nav.label}
+                                        {t(nav.label)}
                                     </FooterItemLabel>
                                 </div>
                             ))}
@@ -157,6 +167,7 @@ const FooterItemLabel = styled.p`
     margin: 15px 0px;
     line-height: 200%;
     letter-spacing: -0.3px;
+    cursor: pointer;
     margin: 5px 0px;
 `;
 

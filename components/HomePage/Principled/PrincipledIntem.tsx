@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PrincipledModel } from ".";
 import { PriamyButton } from "../../button/PriamyButton";
@@ -8,13 +9,14 @@ interface Props {
 }
 
 export const PrincipledIntem = ({ principled }: Props) => {
+    const { t } = useTranslation();
     return (
         <WrapperService key={principled.title}>
             <IndustryImage src={principled.imgUrl} />
-            <IndustryTitle>{principled.title}</IndustryTitle>
-            <IndustryCotent>{principled.discription}</IndustryCotent>
+            <IndustryTitle>{t(principled.title)}</IndustryTitle>
+            <IndustryCotent>{t(principled.discription)}</IndustryCotent>
             <PriamyButton
-                label={principled.buttonLabel}
+                label={t(principled.buttonLabel)}
                 styles={{
                     backgroundImage: "none",
                     paddingTop: 8,

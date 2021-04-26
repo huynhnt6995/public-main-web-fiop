@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { CoudOfPremModel } from ".";
 
@@ -7,14 +8,15 @@ interface Props {
 }
 
 export const CloudOnPremItem = ({ cloud }: Props) => {
+    const { t } = useTranslation();
     return (
         <WrapperService key={cloud.title}>
             <ServiceImage src={cloud.imgUrl} />
             <div>
-                <ServiceTitle>{cloud.title}</ServiceTitle>
+                <ServiceTitle>{t(cloud.title)}</ServiceTitle>
                 <img src={cloud.unlineImageUrl} width="100%" />
             </div>
-            <ServiceCotent>{cloud.discription}</ServiceCotent>
+            <ServiceCotent>{t(cloud.discription)}</ServiceCotent>
         </WrapperService>
     );
 };

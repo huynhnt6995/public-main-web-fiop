@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { PageLayout } from "../layout/PageLayout";
 import { MenuItemModel, MENU_DATA } from "../../constants/menu";
 import { PriamyButton } from "../button/PriamyButton";
+import { useTranslation } from "react-i18next";
 
 const activeLinkStyle = (path: string, href: string): React.CSSProperties => {
     return path === href
@@ -29,6 +30,7 @@ const menuStyle: React.CSSProperties = {
 
 export const AppMenu = () => {
     const route = useRouter();
+    const { t } = useTranslation();
     return (
         <PageLayout containerStyle={menuStyle}>
             <Wrapper>
@@ -49,14 +51,14 @@ export const AppMenu = () => {
                                     menu.link
                                 )}
                             >
-                                {menu.name}
+                                {t(menu.name)}
                             </ItemMenuLabel>
                         </Link>
                     ))}
                 </MenuWrap>
                 <LoginButtonWrap className="col-md-2 align-self-center">
                     <PriamyButton
-                        label="Login"
+                        label={t("login")}
                         styles={{ paddingTop: 5, paddingBottom: 5 }}
                     />
                 </LoginButtonWrap>

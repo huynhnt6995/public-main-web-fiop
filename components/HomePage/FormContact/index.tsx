@@ -1,9 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 import { FormInput } from "./Form";
 
 export const ContactForm = () => {
+    const { t } = useTranslation();
     return (
         <Wrapper>
             <PageLayout>
@@ -18,12 +20,9 @@ export const ContactForm = () => {
                         paddingBottom: 80,
                     }}
                 >
-                    <Title>
-                        Looking for a custom solution that covers your demain?
-                    </Title>
+                    <Title>{t("home_page.looking_for_custom_solution")}</Title>
                     <Discrition>
-                        We provise a custome solution that can perfectly fit
-                        your enterprise’s demain
+                        {t("home_page.looking_for_custom_solution_discription")}
                     </Discrition>
                     <FormInput />
                 </div>

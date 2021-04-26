@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 import { CloudOnPremItem } from "./CloudOnPremItem";
@@ -12,29 +13,27 @@ export interface CoudOfPremModel {
 
 const cloudServices: CoudOfPremModel[] = [
     {
-        discription:
-            "As access to high speed broadband grows and technologies mature, we will inevitably see increased migration to cloud based recording and VMS's. Given the high failure rate of hard drives and the cost to maintain servers, the economics appear to favor cloud based recording.",
+        discription: "home_page.capex_and_opex_content",
         imgUrl: "assets/images/img_capex_opex.png",
-        title: "CapEx vs OpEx",
+        title: "home_page.capex_and_opex",
         unlineImageUrl: "assets/images/img_underline_purple.png",
     },
     {
-        discription:
-            "End-to-end encryption means your video is secure even before it leaves your local network. Traditionally it has been difficult to offer encryption between the camera and the server. Using the Stream Bridge wraps your video in a secure TLS/SSL session and prevent MITM attacks.",
+        discription: "home_page.security_content",
         imgUrl: "assets/images/img_security.png",
         title: "Security",
         unlineImageUrl: "assets/images/img_underline_yellow.png",
     },
     {
-        discription:
-            "Broadflow's cloud services are hosted by AWS and are thus capable of massive scale. We decided to focus on delivering value to customers rather than managing our own data centers. The infrastructure is continuously upgraded alongside new feature releases and video processing improvements.",
+        discription: "home_page.infrastructure_and_scale_content",
         imgUrl: "assets/images/img_scale.png",
-        title: "Infrastructure & Scale",
+        title: "home_page.infrastructure_and_scale",
         unlineImageUrl: "assets/images/img_underline_red.png",
     },
 ];
 
 export const CloudOnPrem = () => {
+    const { t } = useTranslation();
     return (
         <Wrapper>
             <div
@@ -53,7 +52,9 @@ export const CloudOnPrem = () => {
                 <div>
                     <CameraPageImg src="assets/images/img_page_camera.png" />
                     <CloudOnPremContent>
-                        <CloudOnPremTitle>Cloud / On-prem</CloudOnPremTitle>
+                        <CloudOnPremTitle>
+                            {t("home_page.cloud_on_prem")}
+                        </CloudOnPremTitle>
                         <div className="row">
                             {cloudServices.map((service) => (
                                 <div

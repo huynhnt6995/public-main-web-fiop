@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PriamyButton } from "../../button/PriamyButton";
 import { PageLayout } from "../../layout/PageLayout";
@@ -13,6 +14,7 @@ export const HeaderBanner = () => {
 };
 
 const BannerContent = () => {
+    const { t } = useTranslation();
     return (
         <WrapperContent>
             <PageLayout containerStyle={{ height: "100%" }}>
@@ -24,16 +26,13 @@ const BannerContent = () => {
                     }}
                 >
                     <div className="col-12 col-md-6">
-                        <BannerTitle>
-                            Physical security as a software service
-                        </BannerTitle>
+                        <BannerTitle>{t("home_page.banner_title")}</BannerTitle>
                         <BannerLabel>
-                            Cloud and on prem device abstraction solutions for
-                            next-level accessibility and security.
+                            {t("home_page.banner_discription")}
                         </BannerLabel>
                         <div style={{ display: "flex" }}>
                             <PriamyButton
-                                label="Get your free account"
+                                label={t("button.get_your_free_account")}
                                 styles={{
                                     paddingTop: 10,
                                     paddingBottom: 10,
@@ -41,7 +40,7 @@ const BannerContent = () => {
                                 }}
                             />
                             <PriamyButton
-                                label="Contact us"
+                                label={t("button.contact_us")}
                                 styles={{
                                     paddingTop: 10,
                                     paddingBottom: 10,

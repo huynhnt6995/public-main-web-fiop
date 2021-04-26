@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 import { IndustryConceptItem } from "./IndustryConceptItem";
@@ -11,42 +12,38 @@ export interface IndustryConceptModel {
 
 const industryConceptData: IndustryConceptModel[] = [
     {
-        discription:
-            "Off-site recording and point-of-sale in a tightly coupled solution",
+        discription: "home_page.cannabis_dispensary_content",
         imgUrl: "assets/images/img_dispensary.png",
-        title: "Cannabis Dispensary",
+        title: "home_page.cannabis_dispensary",
     },
     {
-        discription:
-            "Search surveillance video for packages by syncing your barcode scanners",
+        discription: "home_page.shipping_and_logistic_content",
         imgUrl: "assets/images/img_logistic.png",
-        title: "Shipping & Logistics",
+        title: "home_page.shipping_and_logistic",
     },
     {
-        discription:
-            "Automate video capture of every transaction by linking with every sale",
+        discription: "home_page.retail_content",
         imgUrl: "assets/images/img_retail.png",
-        title: "Retail",
+        title: "home_page.retail",
     },
     {
-        discription:
-            "Record your security cameras off-site to insure and protect video evidence",
+        discription: "home_page.banking_content",
         imgUrl: "assets/images/img_banking.png",
-        title: "Banking",
+        title: "home_page.banking",
     },
     {
-        discription:
-            "Reduce costs and enhance operational performance with custom automations",
+        discription: "home_page.enterprise_content",
         imgUrl: "assets/images/img_interprise.png",
-        title: "Enterprise",
+        title: "home_page.enterprise",
     },
 ];
 
 export const IndustryConcepts = () => {
+    const { t } = useTranslation();
     return (
         <PageLayout containerStyle={{ paddingTop: 80, paddingBottom: 80 }}>
             <div>
-                <Title>Industry concepts</Title>
+                <Title>{t("home_page.industry_concept")}</Title>
                 <div className="row justify-content-center">
                     {industryConceptData.map((industry) => (
                         <div

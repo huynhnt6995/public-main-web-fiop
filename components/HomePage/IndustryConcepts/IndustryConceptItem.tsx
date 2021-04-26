@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { IndustryConceptModel } from ".";
 
@@ -7,11 +8,12 @@ interface Props {
 }
 
 export const IndustryConceptItem = ({ cloud }: Props) => {
+    const { t } = useTranslation();
     return (
         <WrapperService key={cloud.title}>
             <IndustryImage src={cloud.imgUrl} />
-            <IndustryTitle>{cloud.title}</IndustryTitle>
-            <IndustryCotent>{cloud.discription}</IndustryCotent>
+            <IndustryTitle>{t(cloud.title)}</IndustryTitle>
+            <IndustryCotent>{t(cloud.discription)}</IndustryCotent>
         </WrapperService>
     );
 };

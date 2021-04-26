@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 
@@ -29,13 +30,14 @@ export const ListCompany = () => {
 };
 
 const ListContent = () => {
+    const { t } = useTranslation();
     return (
         <WrapperContent>
             <PageLayout containerStyle={{ height: "100%" }}>
                 <div className="row" style={{ height: "100%" }}>
                     <div className="d-none d-md-block col-md-1" />
                     <div className="col-12 col-md-10 align-self-center">
-                        <Title>Trusted by over 10 companies</Title>
+                        <Title>{t("home_page.list_company_title")}</Title>
                         <div className="row">
                             {companies.map((company) => (
                                 <div

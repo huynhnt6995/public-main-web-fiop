@@ -3,8 +3,10 @@ import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 import Form from "react-bootstrap/Form";
 import { PriamyButton } from "../../button/PriamyButton";
+import { useTranslation } from "react-i18next";
 
 export const LetConnect = () => {
+    const { t } = useTranslation();
     return (
         <PageLayout
             containerStyle={{
@@ -16,11 +18,8 @@ export const LetConnect = () => {
                 className="col align-self-center align-items-center"
                 style={{ paddingTop: 70, paddingBottom: 70 }}
             >
-                <Title>Let's connect</Title>
-                <Subtitle>
-                    Sign up to stay in touch. We'll keep you posted on new
-                    feature releases and promotions.
-                </Subtitle>
+                <Title>{t("home_page.let_connect")}</Title>
+                <Subtitle>{t("home_page.let_connect_content")}</Subtitle>
                 <Form
                     style={{
                         display: "flex",
@@ -34,11 +33,11 @@ export const LetConnect = () => {
                         <Form.Control
                             style={{ borderRadius: 9 }}
                             type="email"
-                            placeholder="Enter your email here"
+                            placeholder={t("form.enter_your_email_here")}
                         />
                     </Form.Group>
                     <PriamyButton
-                        label="Sign me up"
+                        label={t("button.sign_me_up")}
                         styles={{
                             background:
                                 "linear-gradient(180deg, #6065EA 0%, #3A3EA6 100%)",

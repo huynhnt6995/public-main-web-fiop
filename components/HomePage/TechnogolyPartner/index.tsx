@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 
@@ -18,6 +19,7 @@ const partners = [
 ];
 
 export const TechnogogyPartner = () => {
+    const { t } = useTranslation();
     return (
         <PageLayout
             containerStyle={{
@@ -28,11 +30,9 @@ export const TechnogogyPartner = () => {
         >
             <div className="row">
                 <div className="col-12 col-md-6" style={{ paddingRight: 50 }}>
-                    <Title>Technology Partners</Title>
+                    <Title>{t("home_page.technology_partners")}</Title>
                     <Discription>
-                        A short description that tell the customer the benifits
-                        Broadflow can give them when partner with those next
-                        companies. You can write from 2-3 row of words
+                        {t("home_page.technology_partners_discription")}
                     </Discription>
                 </div>
                 <div className="col-12 col-md-6" style={{ paddingLeft: 30 }}>
