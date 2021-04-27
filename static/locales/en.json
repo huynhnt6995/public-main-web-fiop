@@ -5,7 +5,9 @@
         "get_your_free_account": "Get your free account",
         "contact_us": "Contact us",
         "contact_us_now": "Contact us now",
-        "sign_me_up": "Sign me up"
+        "sign_me_up": "Sign me up",
+        "comming_soon" : "Comming soon",
+        "connect" : "Connect"
     },
     "menu": {
         "home": "Home",
@@ -22,7 +24,8 @@
     },
     "form": {
         "enter_your_email_here": "Enter your email here",
-        "enter_your_demain": "Enter your demain"
+        "enter_your_demain": "Enter your demain",
+        "enter_your_message" : "Enter your message"
     },
     "home_page": {
         "banner_title": "Physical security as a software service",
@@ -100,5 +103,47 @@
         "video_package_search": "Package Video Search",
         "live_stream_into_website": "Livestream into your Website",
         "": ""
+    },
+    "industry_page" :{
+        "banner_title" : "Industry",
+        "banner_title2" : "Cannabis Dispensary",
+        "banner_discription" : " Unique compliance requirements managed in the cloud Need a customer solution?",
+        "useCases_title" : "Use Cases",
+        "useCases_description" : "A short description about the use case to set the context for the customer",
+        "offsite_cloud_recording" : "Offsite Cloud Recording",
+        "offsite_cloud_recording_content" : "Safely stream surveillance video to the cloud for maximum flexibility and control.",
+        "seed_to_sale_tracking" : "Seed-to-Sale Tracking",
+        "seed_to_sale_tracking_content" : "Maintain efficient lifecycle awareness by syncing barcode reads with surveillance video.",
+        "point_of_sale" : "Point-of-Sale",
+        "point_of_sale_content" : "Tracking retail transactions in a cash-centric business is challenging without the right tools.",
+        "broadflow" : "Broadflow offers a suite of tools that solve problems",
+        "cloud_surveillance" : "Cloud Surveillance",
+        "cloud_surveillance_description" : "Live view and record your surveillance video streams securely and reliably",
+        "cloud_surveillance_item": "A benifit of this feature that may help the customer solve his/her problem",
+        "manufacturing_lifecycle_tracking": "Manufacturing Lifecycle Tracking",
+        "manufacturing_lifecycle_tracking_description" : "Broadflow’s cloud and on-premises solutions are designed as “middleware” that bridges sensor data with geospatially relevant security cameras.",
+        "manufacturing_lifecycle_tracking_item" :"A benifit of this feature that may help the customer solve his/her problem",
+        "live_stream_into_your_website" : "Live stream into your Website",
+        "live_stream_into_your_website_description" : "Embed a code snippet on your site to share your work with the world. We’ll take care of the auto-scaling to ensure your video content is streamed continuously at a high quality no matter the audience size.",
+        "live_stream_into_your_website_item" : "A benifit of this feature that may help the customer solve his/her problem",
+        "advanced_notifications": "Advanced Notifications",
+        "advanced_notifications_description": "Use physical event monitoring to link devices, people and places. Broadflow utilizes SMTP and SNMP to listen to device state changes. For example, abnormal temperature detection, device tampering, line crossing and more.",
+        "advanced_notifications_item" : "A benifit of this feature that may help the customer solve his/her problem",
+        "point_of_sale_checkout_integration": "Point-of-Sale Checkout Integration",
+        "point_of_sale_checkout_integration_description": "Real-time retail transaction data has value. Automate quality controls to ensure that every sale meet or exceeds company standards and customer expectations.",
+        "point_of_sale_checkout_integration_item" : "A benifit of this feature that may help the customer solve his/her problem", 
+        "support_for_offline_networks" : "Support for Offline Networks",
+        "support_for_offline_networks_description": "The Streams Bridge is a small network appliance that provides an interface between cameras, barcode scanners, POS terminals and access control systems.",
+        "support_for_offline_networks_item" : "A benifit of this feature that may help the customer solve his/her problem",
+        "the_streams_bridge" : "The Streams Bridge brings the cloud directly to end users",
+        "for_end_users" : "For end users ",
+        "for_end_users_content" : "We don’t partner with resellers. Our vision is to work directly with commercial end users. This cut costs for our customers while giving them full control over their data.",
+        "secure" : "Secure ",
+        "secure_content" : " The Bridge delivers immediate value by securing all outgoing video streams and providing users with a cloud-based software abstraction to make the complex simple.",
+        "local_interface": "Local interface",
+        "local_interface_content" : "The Streams Bridge serves offline systems by providing customers with an on-premises analog to our cloud offering. Support for Windows, Mac and Linux.",
+        "need_a_custom_solution" : "Need a custom solution?",
+        "need_a_custom_solution_content" : "We love learning from our partners and customers to discover new opportunities that deliver immediate business value.",
+        "" : ""
     }
 }
