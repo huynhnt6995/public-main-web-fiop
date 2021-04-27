@@ -21,10 +21,36 @@ export const SliderPostItem = () => {
             </div>
             <div
                 style={{
-                    marginTop: 20,
                     width: "37%",
+                    position: "relative",
                 }}
             >
+                <div className="d-flex">
+                    <ArrowButton
+                        aria-hidden="true"
+                        className="carousel-control-prev-icon"
+                        onClick={() => {
+                            const leftArrow = document.getElementsByClassName(
+                                "carousel-control-prev"
+                            )[0] as any;
+                            leftArrow.click();
+                        }}
+                    >
+                        <i className="bi bi-chevron-left"></i>
+                    </ArrowButton>
+                    <ArrowButton
+                        aria-hidden="true"
+                        className="carousel-control-next-icon"
+                        onClick={() => {
+                            const rightArrow = document.getElementsByClassName(
+                                "carousel-control-next"
+                            )[0] as any;
+                            rightArrow.click();
+                        }}
+                    >
+                        <i className="bi bi-chevron-right"></i>
+                    </ArrowButton>
+                </div>
                 <PostTitle>{t("blog_page.slide_post_title")}</PostTitle>
                 <PostContent>{t("blog_page.slide_post_content")}</PostContent>
                 <PostCreateTime>March 20, 2020</PostCreateTime>
@@ -53,4 +79,14 @@ const PostCreateTime = styled.label`
     font-size: 14px;
     line-height: 200%;
     color: #999999;
+`;
+
+const ArrowButton = styled.span`
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    color: #000 !important;
+    background-image: none;
+    border: 1px solid #cdcdcd;
+    margin-right: 10px;
+    cursor: pointer;
 `;

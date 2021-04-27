@@ -109,7 +109,26 @@
     "blog_page": {
         "broadflow_blog": "Broadflow Blog",
         "slide_post_title": "Hackers Breach Thousands of Security Cameras, Exposing Tesla, Jails, Hospitals",
-        "slide_post_content": "A group of hackers say they breached a massive trove of security-camera data collected by Silicon Valley startup Verkada Inc., gaining access to..."
+        "slide_post_content": "A group of hackers say they breached a massive trove of security-camera data collected by Silicon Valley startup Verkada Inc., gaining access to...",
+        "lastest_news": "Lastest News",
+        "hikvision_traffic": "Hikvision Traffic Visualization Dashboard helps traffic managers make faster and better real-time...",
+        "hikvision_traffic_content": "In modern crowded cities, effective traffic management is critical for reducing congest...",
+        "massive_camera_hack": "Massive camera hack exposes the growing reach and intimacy of American surveillance",
+        "massive_camera_hack_content": "A breach of the camera start-up Verkada ‘should be a wake-up call to the dangers of ...",
+        "cctc_camera": "Should we be worried by ever more CCTV cameras?",
+        "cctc_camera_content": "It is all quiet on a mid-morning weekday at the CCTV monitoring centre of Southwark Council,...",
+        "security_camera": "Security camera hack exposes hospitals, workplaces, schools",
+        "security_camera_content": "Security camera hack exposes hospitals, workplaces, schools",
+        "technology": "Technogoly",
+        "security_cctv": "Security,CCTV",
+        "daily_news": "Daily news",
+        "AI_education": "Leading the over-coax AI evolution with Dahua HDCVI 6.0 PLUS",
+        "camera_live_image": "Hanwha’s Wisenet camera captures live images of volcano eruption",
+        "cybersecurity": "Cybersecurity - Nedap Security Management",
+        "top_5_security_camera": "Top 5 security cameras for your home",
+        "should_we_be_worried": "Should we be worried by ever more CCTV cameras?",
+        "type_of_cctv_camera": "Types of CCTV Cameras – The Complete Guide",
+        "": ""
     },
     "footer_app": {
         "industry": "Industry",
