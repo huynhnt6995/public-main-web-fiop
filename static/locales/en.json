@@ -5,7 +5,8 @@
         "get_your_free_account": "Get your free account",
         "contact_us": "Contact us",
         "contact_us_now": "Contact us now",
-        "sign_me_up": "Sign me up"
+        "sign_me_up": "Sign me up",
+        "speak_to_us": "Speak to us"
     },
     "menu": {
         "home": "Home",
@@ -23,7 +24,8 @@
     },
     "form": {
         "enter_your_email_here": "Enter your email here",
-        "enter_your_demain": "Enter your demain"
+        "enter_your_demain": "Enter your demain",
+        "enter_your_question": "Enter your question"
     },
     "home_page": {
         "banner_title": "Physical security as a software service",
@@ -93,6 +95,8 @@
         "content2": "We work directly with end-user customers, integrators and manufacturing partners to deliver solutions that solve niche problems. Out-of-the-box solutions don’t always fit the business requirements. Our strong roots in both industries gives us clarity. When it comes to integrating systems built by different manufacturers, developing custom on-premises software interfaces, or deploying cloud infrastructure on AWS, it is always from the coupled perspective of system integrator, software engineer and cloud architect.",
         "content3": "We are constantly learning from customers, and this feedback fuels our product development cycles.",
         "connect": "Connect with a Broadflow consultant to identify potential synergy today!",
+        "form_title": "Speak to a Human",
+        "form_discription": "Contact us with any questions you might have about how Broadflow can add value to your physical security and business operations.",
         "": ""
     },
     "footer_app": {
