@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 import { DailyNewItem } from "./DailyNewItem";
-import { LastestNewsItem } from "./LastestNewsItem";
+import { NewsItem } from "../NewsItem";
 
-export interface LastestNewsModels {
+export interface NewsModels {
     imgUrl: string;
     category: string;
     title: string;
@@ -17,7 +17,7 @@ export interface DailyNewsModel {
     title: string;
 }
 
-const lastestNews: LastestNewsModels[] = [
+const lastestNews: NewsModels[] = [
     {
         imgUrl: "assets/images/img_hikvision_camera.png",
         category: "blog_page.technology",
@@ -66,7 +66,7 @@ export const LastestNews = () => {
     const { t } = useTranslation();
     return (
         <PageLayout>
-            <div>
+            <div style={{ marginTop: 50 }}>
                 <Title>{t("blog_page.lastest_news")}</Title>
                 <div className="row">
                     <div
@@ -75,17 +75,19 @@ export const LastestNews = () => {
                     >
                         <div className="w-100 row">
                             {lastestNews.map((news) => (
-                                <LastestNewsItem key={news.title} news={news} />
+                                <NewsItem key={news.title} news={news} />
                             ))}
                         </div>
                     </div>
-                    <DailyWrapper className="col-12 col-md-6 col-lg-4">
-                        <DailyNewsTitle>
-                            {t("blog_page.daily_news")}
-                        </DailyNewsTitle>
-                        {dailyNews.map((news) => (
-                            <DailyNewItem news={news} />
-                        ))}
+                    <DailyWrapper className="col-12 col-lg-4">
+                        <div className="row">
+                            <DailyNewsTitle>
+                                {t("blog_page.daily_news")}
+                            </DailyNewsTitle>
+                            {dailyNews.map((news) => (
+                                <DailyNewItem news={news} />
+                            ))}
+                        </div>
                     </DailyWrapper>
                 </div>
             </div>
@@ -106,7 +108,9 @@ const DailyNewsTitle = styled.p`
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
+    margin-left: 15px;
     color: #303030;
+    width: 100%;
     margin-top: 20px;
 `;
 

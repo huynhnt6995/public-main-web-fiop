@@ -5,27 +5,10 @@ import styled from "styled-components";
 export const SliderPostItem = () => {
     const { t } = useTranslation();
     return (
-        <div
-            className="d-flex justify-content-between"
-            style={{ marginTop: 30, marginBottom: 30 }}
-        >
-            <div
-                style={{
-                    width: "60%",
-                }}
-            >
-                <img
-                    src="assets/images/img_lide_post.png"
-                    style={{ width: "100%" }}
-                />
-            </div>
-            <div
-                style={{
-                    width: "37%",
-                    position: "relative",
-                }}
-            >
-                <div className="d-flex">
+        <Wrapper>
+            <PostImage src="assets/images/img_lide_post.png" />
+            <PostContentWrap>
+                <div>
                     <ArrowButton
                         aria-hidden="true"
                         className="carousel-control-prev-icon"
@@ -54,17 +37,47 @@ export const SliderPostItem = () => {
                 <PostTitle>{t("blog_page.slide_post_title")}</PostTitle>
                 <PostContent>{t("blog_page.slide_post_content")}</PostContent>
                 <PostCreateTime>March 20, 2020</PostCreateTime>
-            </div>
-        </div>
+            </PostContentWrap>
+        </Wrapper>
     );
 };
+
+const Wrapper = styled.div`
+    margin: 30px 0px;
+    @media (min-width: 350px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+`;
 
 const PostTitle = styled.p`
     font-family: "Poppins";
     font-weight: 500;
-    font-size: 32px;
     line-height: 165%;
     color: #303030;
+    @media (min-width: 350px) {
+        font-size: 22px;
+        line-height: 100%;
+    }
+    @media (min-width: 768px) {
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 5px;
+    }
+    @media (min-width: 991px) {
+        font-size: 26px;
+        line-height: 130%;
+    }
+    @media (min-width: 1333px) {
+        font-size: 32px;
+        line-height: 165%;
+        margin-bottom: 20px;
+    }
 `;
 
 const PostContent = styled.label`
@@ -72,6 +85,41 @@ const PostContent = styled.label`
     font-size: 16px;
     line-height: 200%;
     color: #606060;
+    @media (min-width: 350px) {
+        font-size: 14px;
+        line-height: 130%;
+    }
+    @media (min-width: 768px) {
+        font-size: 15px;
+    }
+    @media (min-width: 991px) {
+        /* font-size: 28px; */
+        line-height: 150%;
+    }
+    @media (min-width: 1333px) {
+        /* font-size: 32px; */
+        line-height: 200%;
+    }
+`;
+
+const PostImage = styled.img`
+    @media (min-width: 350px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+        width: 60%;
+    }
+`;
+
+const PostContentWrap = styled.div`
+    position: relative;
+    @media (min-width: 350px) {
+        width: 100%;
+    }
+    @media (min-width: 768px) {
+        width: 37%;
+    }
 `;
 
 const PostCreateTime = styled.label`

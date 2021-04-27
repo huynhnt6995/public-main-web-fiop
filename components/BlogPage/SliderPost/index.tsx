@@ -11,6 +11,7 @@ export const SliderPost = () => {
                 id="carouselExampleControls"
                 className={(style["slide"], style["carousel"])}
                 data-ride="carousel"
+                style={{ borderBottom: "1px solid #E7E7E7", paddingBottom: 10 }}
             >
                 <Carousel
                     nextIcon={

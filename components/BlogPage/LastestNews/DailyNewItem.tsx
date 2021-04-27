@@ -10,7 +10,7 @@ interface Props {
 export const DailyNewItem = ({ news }: Props) => {
     const { t } = useTranslation();
     return (
-        <div style={{ marginBottom: 40 }}>
+        <div className="col-12 col-sm-6 col-lg-12" style={{ marginBottom: 40 }}>
             <Time>March 20, 2020 - {t(news.category)}</Time>
             <Title>{t(news.title)}</Title>
         </div>

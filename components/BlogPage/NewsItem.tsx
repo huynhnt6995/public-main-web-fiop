@@ -1,13 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import { LastestNewsModels } from ".";
+import { NewsModels } from "./LastestNews";
 
 interface Props {
-    news: LastestNewsModels;
+    news: NewsModels;
 }
 
-export const LastestNewsItem = ({ news }: Props) => {
+export const NewsItem = ({ news }: Props) => {
     const { t } = useTranslation();
     return (
         <div className="col-12 col-sm-6" style={{ marginBottom: 50 }}>
