@@ -12,6 +12,7 @@
         "industry": "Industry",
         "technology": "Technogoly",
         "solution": "Solution",
+        "about_us": "About us",
         "blog": "Blog",
         "pricing": "Pricing",
         "contact_us": "Contact us",
@@ -82,6 +83,11 @@
         "cctc_code_explained": "CCTV Codecs Explained",
         "let_connect": "Let's connect",
         "let_connect_content": "Sign up to stay in touch. We'll keep you posted on new feature releases and promotions.",
+        "": ""
+    },
+    "about_page": {
+        "about_broadflow": "About Broadflow",
+        "about_broadflow_discription": "We create the simplest, most powerful IT solutions—helping everyone from small businesses to global enterprises save time and money",
         "": ""
     },
     "footer_app": {

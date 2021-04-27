@@ -12,6 +12,7 @@ export const LetConnect = () => {
             containerStyle={{
                 background: `url("assets/images/img_contact_background.png") no-repeat left top`,
                 backgroundColor: "#FAFCFF",
+                backgroundSize: "cover",
             }}
         >
             <div
