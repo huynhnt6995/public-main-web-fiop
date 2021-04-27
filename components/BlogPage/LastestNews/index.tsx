@@ -44,6 +44,27 @@ const lastestNews: NewsModels[] = [
     },
 ];
 
+const lastestNewsBottom: NewsModels[] = [
+    {
+        imgUrl: "assets/images/img_facial.png",
+        category: "blog_page.technology",
+        title: "blog_page.facial_recognition",
+        shortContent: "blog_page.facial_recognition_content",
+    },
+    {
+        imgUrl: "assets/images/img_more_science.png",
+        category: "blog_page.technology",
+        title: "blog_page.moral_science",
+        shortContent: "blog_page.moral_science_content",
+    },
+    {
+        imgUrl: "assets/images/img_surveillance_camera.png",
+        category: "blog_page.security_cctv",
+        title: "blog_page.surveillance_camera",
+        shortContent: "blog_page.surveillance_camera_content",
+    },
+];
+
 const dailyNews: DailyNewsModel[] = [
     { title: "blog_page.AI_education", category: "blog_page.technology" },
     { title: "blog_page.camera_live_image", category: "blog_page.technology" },
@@ -80,7 +101,10 @@ export const LastestNews = () => {
                         </div>
                     </div>
                     <DailyWrapper className="col-12 col-lg-4">
-                        <div className="row">
+                        <div
+                            className="row"
+                            style={{ marginRight: "none !important" }}
+                        >
                             <DailyNewsTitle>
                                 {t("blog_page.daily_news")}
                             </DailyNewsTitle>
@@ -89,6 +113,17 @@ export const LastestNews = () => {
                             ))}
                         </div>
                     </DailyWrapper>
+                    <div className="col-12" style={{ paddingRight: 0 }}>
+                        <div className="row">
+                            {lastestNewsBottom.map((news) => (
+                                <NewsItem
+                                    key={news.title}
+                                    news={news}
+                                    itemClass="col-12 col-sm-6 col-lg-4"
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </PageLayout>

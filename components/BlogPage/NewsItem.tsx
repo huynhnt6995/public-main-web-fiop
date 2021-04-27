@@ -5,12 +5,16 @@ import { NewsModels } from "./LastestNews";
 
 interface Props {
     news: NewsModels;
+    itemClass?: string;
 }
 
-export const NewsItem = ({ news }: Props) => {
+export const NewsItem = ({ news, itemClass }: Props) => {
     const { t } = useTranslation();
     return (
-        <div className="col-12 col-sm-6" style={{ marginBottom: 50 }}>
+        <div
+            className={itemClass || "col-12 col-sm-6"}
+            style={{ marginBottom: 50 }}
+        >
             <img className="w-100" src={news.imgUrl} />
             <Category>{t(news.category)}</Category>
             <Title>{t(news.title)}</Title>
