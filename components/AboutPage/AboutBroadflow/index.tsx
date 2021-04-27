@@ -9,8 +9,8 @@ export const AboutBroadflow = () => {
         <PageLayout
             containerStyle={{
                 background:
-                    'url("assets/images/img_contact_background.png") no-repeat center center fixed,linear-gradient(78.03deg, rgba(119, 88, 237, 0.05) 0%, rgba(255, 255, 255, 0) 100%), #FAFCFF',
-                backgroundSize: "cover",
+                    'url("assets/images/img_contact_background.png") no-repeat left top,linear-gradient(78.03deg, rgba(119, 88, 237, 0.05) 0%, rgba(255, 255, 255, 0) 100%), #FAFCFF',
+                backgroundSize: "100% 100%",
             }}
         >
             <div

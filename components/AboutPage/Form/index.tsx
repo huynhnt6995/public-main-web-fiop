@@ -10,8 +10,8 @@ export const FormConnect = () => {
         <PageLayout
             containerStyle={{
                 background:
-                    'url("assets/images/img_contact_background.png") no-repeat center center fixed,linear-gradient(180deg, #6065EA 0%, #3A3EA6 100%)',
-                backgroundSize: "cover",
+                    'url("assets/images/img_contact_background.png") no-repeat left top,linear-gradient(180deg, #6065EA 0%, #3A3EA6 100%)',
+                backgroundSize: "100% 100%",
                 paddingTop: 70,
                 paddingBottom: 70,
             }}
