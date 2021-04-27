@@ -1,7 +1,12 @@
 import React from "react";
+import { SearchHeader } from "../components/BlogPage/SearchHeader";
 
 const Blog = () => {
-    return <div>Blog</div>;
+    return (
+        <div>
+            <SearchHeader />
+        </div>
+    );
 };
 
 export default Blog;
