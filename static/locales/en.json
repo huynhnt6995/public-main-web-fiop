@@ -6,7 +6,8 @@
         "contact_us": "Contact us",
         "contact_us_now": "Contact us now",
         "sign_me_up": "Sign me up",
-        "speak_to_us": "Speak to us"
+        "speak_to_us": "Speak to us",
+        "send": "Send"
     },
     "menu": {
         "home": "Home",
@@ -25,7 +26,8 @@
     "form": {
         "enter_your_email_here": "Enter your email here",
         "enter_your_demain": "Enter your demain",
-        "enter_your_question": "Enter your question"
+        "enter_your_question": "Enter your question",
+        "enter_your_message": "Enter your message"
     },
     "home_page": {
         "banner_title": "Physical security as a software service",
@@ -97,6 +99,11 @@
         "connect": "Connect with a Broadflow consultant to identify potential synergy today!",
         "form_title": "Speak to a Human",
         "form_discription": "Contact us with any questions you might have about how Broadflow can add value to your physical security and business operations.",
+        "": ""
+    },
+    "contact_us_page": {
+        "contact_broadflow": "Contact Broadflow",
+        "contact_broadflow_discription": "Reach out to us whenever you have questions regarding Broadflow products. Our experts will resolve your problems in no time.",
         "": ""
     },
     "footer_app": {
