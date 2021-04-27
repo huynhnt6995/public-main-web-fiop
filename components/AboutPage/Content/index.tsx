@@ -3,14 +3,14 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { PageLayout } from "../../layout/PageLayout";
 
-export const AboutBroadflow = () => {
+export const Content = () => {
     const { t } = useTranslation();
     return (
         <PageLayout
             containerStyle={{
-                background:
-                    'url("assets/images/img_contact_background.png") no-repeat center center fixed,linear-gradient(78.03deg, rgba(119, 88, 237, 0.05) 0%, rgba(255, 255, 255, 0) 100%), #FAFCFF',
-                backgroundSize: "cover",
+                backgroundColor: "#fff",
+                paddingTop: 50,
+                paddingBottom: 70,
             }}
         >
             <div
@@ -23,14 +23,21 @@ export const AboutBroadflow = () => {
                     paddingRight: 50,
                 }}
             >
-                <Title>{t("about_page.about_broadflow")}</Title>
+                <Title>{t("about_page.title")}</Title>
+                <Discription>{t("about_page.content1")}</Discription>
+                <Discription>{t("about_page.content2")}</Discription>
                 <Discription>
-                    {t("about_page.about_broadflow_discription")}
+                    {t("about_page.content3")}
+                    <span
+                        style={{
+                            color: "#5157D3",
+                            textDecoration: "underline",
+                            cursor: "pointer",
+                        }}
+                    >
+                        {t("about_page.connect")}
+                    </span>
                 </Discription>
-                <img
-                    src="assets/images/img_about_broadflow.png"
-                    style={{ width: "100%" }}
-                />
             </div>
         </PageLayout>
     );
@@ -38,11 +45,8 @@ export const AboutBroadflow = () => {
 
 const Title = styled.p`
     font-family: "Poppins";
-    font-weight: 500;
     font-size: 36px;
-    line-height: 54px;
-    text-align: center;
-    letter-spacing: -0.3px;
+    line-height: 150%;
     color: #303030;
 `;
 
@@ -50,8 +54,6 @@ const Discription = styled.label`
     font-family: "Poppins";
     font-size: 16px;
     line-height: 200%;
-    text-align: center;
     color: #303030;
-    margin: 70px;
-    margin-top: 0px;
+    margin: 15px 0px;
 `;

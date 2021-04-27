@@ -88,6 +88,11 @@
     "about_page": {
         "about_broadflow": "About Broadflow",
         "about_broadflow_discription": "We create the simplest, most powerful IT solutions—helping everyone from small businesses to global enterprises save time and money",
+        "title": "Broadflow is a software company specializing in the convergence of physical security, cloud services and engineering",
+        "content1": "Founded in 2020, Broadflow was created by technologists and entrepreneurs with two decades of experience in both physical security and software development. Our journey has been exciting, as we’ve broken new ground exploring physical device abstraction and management from the perspective of customers and real world scenarios.",
+        "content2": "We work directly with end-user customers, integrators and manufacturing partners to deliver solutions that solve niche problems. Out-of-the-box solutions don’t always fit the business requirements. Our strong roots in both industries gives us clarity. When it comes to integrating systems built by different manufacturers, developing custom on-premises software interfaces, or deploying cloud infrastructure on AWS, it is always from the coupled perspective of system integrator, software engineer and cloud architect.",
+        "content3": "We are constantly learning from customers, and this feedback fuels our product development cycles.",
+        "connect": "Connect with a Broadflow consultant to identify potential synergy today!",
         "": ""
     },
     "footer_app": {
