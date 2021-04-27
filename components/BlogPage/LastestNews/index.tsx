@@ -113,7 +113,7 @@ export const LastestNews = () => {
                             ))}
                         </div>
                     </DailyWrapper>
-                    <div className="col-12" style={{ paddingRight: 0 }}>
+                    <div className="col-12">
                         <div className="row">
                             {lastestNewsBottom.map((news) => (
                                 <NewsItem
