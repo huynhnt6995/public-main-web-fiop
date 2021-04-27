@@ -16,7 +16,7 @@ export const SearchHeader = () => {
         >
             <div
                 className="col col-md-6 offset-md-3"
-                style={{ paddingTop: 70, paddingBottom: 70 }}
+                style={{ paddingBottom: 110, paddingTop: 70 }}
             >
                 <Title>{t("blog_page.broadflow_blog")}</Title>
                 <SearchField />

@@ -107,7 +107,9 @@
         "": ""
     },
     "blog_page": {
-        "broadflow_blog": "Broadflow Blog"
+        "broadflow_blog": "Broadflow Blog",
+        "slide_post_title": "Hackers Breach Thousands of Security Cameras, Exposing Tesla, Jails, Hospitals",
+        "slide_post_content": "A group of hackers say they breached a massive trove of security-camera data collected by Silicon Valley startup Verkada Inc., gaining access to..."
     },
     "footer_app": {
         "industry": "Industry",
