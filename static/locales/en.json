@@ -20,12 +20,15 @@
         "help_center": "Help center",
         "term_of_use": "Term of use",
         "privacy": "Privacy",
-        "login": "Login"
+        "login": "Login",
+        "about_us" : "About us",
+        "" : ""
     },
     "form": {
         "enter_your_email_here": "Enter your email here",
         "enter_your_demain": "Enter your demain",
-        "enter_your_message" : "Enter your message"
+        "enter_your_message" : "Enter your message",
+        "search_blog" : "Search blog"
     },
     "home_page": {
         "banner_title": "Physical security as a software service",
@@ -145,5 +148,12 @@
         "need_a_custom_solution" : "Need a custom solution?",
         "need_a_custom_solution_content" : "We love learning from our partners and customers to discover new opportunities that deliver immediate business value.",
         "" : ""
+    },
+   "blog_page" :{
+       "broadflow_blog" : "Broadflow Blog",
+       "hot_news_title" : "Hackers Breach Thousands of Security Cameras, Exposing Tesla, Jails, Hospitals",
+       "hot_news_description" : "A group of hackers say they breached a massive trove of security-camera data collected by Silicon Valley startup Verkada Inc., gaining access to...",
+       "hot_news_date_time" : "March 20, 2020"
+
     }
 }
