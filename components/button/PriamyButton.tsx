@@ -16,4 +16,5 @@ const Wrapper = styled(Button)`
     border: 0px;
     border-radius: 5px;
     padding: 0px 20px;
+    font-family: "Poppins";
 `;

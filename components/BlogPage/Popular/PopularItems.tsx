@@ -11,7 +11,7 @@ interface Props {
 export const PopularItems = ({ index, popular }: Props) => {
     const { t } = useTranslation();
     return (
-        <div className="d-flex" style={{ height: 80 }}>
+        <div className="d-flex">
             <div
                 className="d-flex justify-content-center align-items-center"
                 style={{
