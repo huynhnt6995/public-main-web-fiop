@@ -234,5 +234,9 @@
         "need_a_custom_solution": "Need a custom solution?",
         "need_a_custom_solution_content": "We love learning from our partners and customers to discover new opportunities that deliver immediate business value.",
         "": ""
+    },
+    "pricing_page": {
+        "billed_monthly_tab": "Billed monthly",
+        "billed_annually_tab": "Billed annually"
     }
 }
