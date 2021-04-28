@@ -236,6 +236,8 @@
         "": ""
     },
     "pricing_page": {
+        "pricing": "Pricing",
+        "pricing_discription": "Choose product to get the ideal plan for your security system",
         "billed_monthly_tab": "Billed monthly",
         "billed_annually_tab": "Billed annually"
     }

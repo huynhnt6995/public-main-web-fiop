@@ -1,10 +1,11 @@
 import React from "react";
 import { PricingTab } from "../components/PricingPage/PricingTab";
+import { PricingHeader } from "../components/PricingPage/PricingHeader";
 
 const Pricing = () => {
     return (
         <div>
-            <div style={{ height: 100 }}></div>
+            <PricingHeader />
             <PricingTab />
         </div>
     );
