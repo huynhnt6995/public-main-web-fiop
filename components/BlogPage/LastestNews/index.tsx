@@ -109,7 +109,7 @@ export const LastestNews = () => {
                                 {t("blog_page.daily_news")}
                             </DailyNewsTitle>
                             {dailyNews.map((news) => (
-                                <DailyNewItem news={news} />
+                                <DailyNewItem news={news} key={news.title} />
                             ))}
                         </div>
                     </DailyWrapper>

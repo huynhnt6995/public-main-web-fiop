@@ -161,7 +161,10 @@ export const Popular = () => {
                         </div>
                     </div>
                     {popularPosts.map((post) => (
-                        <div className="col-12 col-sm-6 col-lg-4">
+                        <div
+                            className="col-12 col-sm-6 col-lg-4"
+                            key={post.title}
+                        >
                             <NewsItem news={post} itemClass="col-12" />
                         </div>
                     ))}
