@@ -22,7 +22,6 @@ export const ListCompany = () => {
     return (
         <div>
             <Wrapper>
-                <BackgroundImg src="assets/images/img_background_companies.png" />
                 <ListContent />
             </Wrapper>
         </div>
@@ -34,11 +33,16 @@ const ListContent = () => {
     return (
         <WrapperContent>
             <PageLayout containerStyle={{ height: "100%" }}>
-                <div className="row" style={{ height: "100%" }}>
+                <div
+                    className="row"
+                    style={{
+                        height: "100%",
+                    }}
+                >
                     <div className="d-none d-md-block col-md-1" />
                     <div className="col-12 col-md-10 align-self-center">
                         <Title>{t("home_page.list_company_title")}</Title>
-                        <div className="row">
+                        <div className="row justify-content-center">
                             {companies.map((company) => (
                                 <div
                                     className="col-6 col-sm-3 col-lg-2"
@@ -57,12 +61,10 @@ const ListContent = () => {
 };
 
 const Wrapper = styled.div`
-    position: relative;
-`;
-
-const BackgroundImg = styled.img`
-    width: 100%;
-    min-height: 300px;
+    background: url("assets/images/img_background_companies.png") no-repeat left
+        top;
+    background-size: 100% 100%;
+    padding: 50px 0px;
 `;
 
 const CompanyImage = styled.img`
@@ -70,11 +72,8 @@ const CompanyImage = styled.img`
 `;
 
 const WrapperContent = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
 `;
 
 const Title = styled.p`

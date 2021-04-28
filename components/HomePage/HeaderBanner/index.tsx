@@ -8,7 +8,6 @@ export const HeaderBanner = () => {
     return (
         <Wrapper>
             <BannerContent />
-            <BackgroundImg src="assets/images/img_industry_banner.png" />
         </Wrapper>
     );
 };
@@ -60,20 +59,18 @@ const BannerContent = () => {
 };
 
 const Wrapper = styled.div`
-    position: relative;
-    background: linear-gradient(
+    background: url("assets/images/img_industry_banner.png") no-repeat left top,
+        linear-gradient(
             78.03deg,
             rgba(119, 88, 237, 0.05) 0%,
             rgba(255, 255, 255, 0) 100%
         ),
         #fafcff;
-`;
-const BackgroundImg = styled.img`
-    width: 100%;
+    background-size: 100% 100%;
+    height: 660px;
 `;
 
 const WrapperContent = styled.div`
-    position: absolute;
     width: 100%;
     height: 100%;
 `;
