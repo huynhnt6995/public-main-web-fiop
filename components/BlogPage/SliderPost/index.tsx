@@ -13,24 +13,7 @@ export const SliderPost = () => {
                 data-ride="carousel"
                 style={{ borderBottom: "1px solid #E7E7E7", paddingBottom: 10 }}
             >
-                <Carousel
-                    nextIcon={
-                        <span
-                            aria-hidden="true"
-                            className="carousel-control-next-icon"
-                        >
-                            <i className="bi bi-chevron-right"></i>
-                        </span>
-                    }
-                    prevIcon={
-                        <span
-                            aria-hidden="true"
-                            className="carousel-control-prev-icon"
-                        >
-                            <i className="bi bi-chevron-left"></i>
-                        </span>
-                    }
-                >
+                <Carousel>
                     {[1, 2, 3].map((i) => (
                         <Carousel.Item key={i}>
                             <SliderPostItem />

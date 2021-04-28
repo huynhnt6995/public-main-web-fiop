@@ -8,7 +8,7 @@ export const SliderPostItem = () => {
         <Wrapper>
             <PostImage src="assets/images/img_lide_post.png" />
             <PostContentWrap>
-                <div>
+                <div className="d-flex">
                     <ArrowButton
                         aria-hidden="true"
                         className="carousel-control-prev-icon"
@@ -129,7 +129,7 @@ const PostCreateTime = styled.label`
     color: #999999;
 `;
 
-const ArrowButton = styled.span`
+const ArrowButton = styled.div`
     background-color: #f5f5f5;
     border-radius: 8px;
     color: #000 !important;
@@ -137,4 +137,7 @@ const ArrowButton = styled.span`
     border: 1px solid #cdcdcd;
     margin-right: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items:center;
 `;
