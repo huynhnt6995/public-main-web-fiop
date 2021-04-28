@@ -67,7 +67,7 @@ export const RecentArticles = () => {
                     </div>
                     <div className="col-12 col-lg-4">
                         <div className="row">
-                            <div className="col-6 col-lg-12">
+                            <div className="col-12 col-sm-6 col-lg-12">
                                 <ArticleBackgroundWrap>
                                     <CCTVRatingWrap
                                         src="assets/images/img_camera_ip_rating.png"
@@ -81,7 +81,7 @@ export const RecentArticles = () => {
                                     </ArticleTitleAbsolute>
                                 </ArticleBackgroundWrap>
                             </div>
-                            <div className="col-6 col-lg-12">
+                            <div className="col-12 col-sm-6 col-lg-12">
                                 <ArticleBackgroundWrap>
                                     <img
                                         src="assets/images/img_cctv.png"

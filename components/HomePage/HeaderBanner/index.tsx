@@ -67,7 +67,17 @@ const Wrapper = styled.div`
         ),
         #fafcff;
     background-size: 100% 100%;
-    height: 660px;
+    @media (min-width: 350px) {
+        padding: 50px 0px;
+    }
+
+    @media (min-width: 520px) {
+        padding: 100px 0px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 150px 0px;
+    }
 `;
 
 const WrapperContent = styled.div`
