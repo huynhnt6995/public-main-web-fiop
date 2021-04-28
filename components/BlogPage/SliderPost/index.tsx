@@ -31,8 +31,8 @@ export const SliderPost = () => {
                         </span>
                     }
                 >
-                    {[1, 2, 3].map((item) => (
-                        <Carousel.Item>
+                    {[1, 2, 3].map((i) => (
+                        <Carousel.Item key={i}>
                             <SliderPostItem />
                         </Carousel.Item>
                     ))}
