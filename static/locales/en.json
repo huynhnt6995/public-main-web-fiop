@@ -265,6 +265,13 @@
         "notification_tab": "Notification",
         "notification_retention_days": "Notification Retention Days",
         "webhook_notification": "Webhook Notification",
+        "video_storage": "Video Storage",
+        "inbound_log_days": "Inbound Log Days",
+        "cloud_recording": "Cloud Recording",
+        "video_vault": "Video Vault",
+        "custom_recording_schedules": "Custom Recording Schedules",
+        "long_term_video_archival": "Long Term Video Archival",
+        "cloud_storage": "Cloud Storage",
         "": ""
     }
 }

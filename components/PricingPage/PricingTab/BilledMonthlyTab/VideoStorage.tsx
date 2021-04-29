@@ -7,44 +7,36 @@ import { FeatureItem } from "../FeatureItem";
 
 const features: FeatureModel[] = [
     {
-        name: "pricing_page.notification_retention_days",
+        name: "pricing_page.inbound_log_days",
         compare: [5, 30, 60, 90, "Customizable"],
     },
     {
-        name: "pricing_page.email_notification",
-        compare: [10, 10, 750, 2000, "Customizable"],
-    },
-    {
-        name: "pricing_page.sms_notification",
-        compare: [null, 100, 750, 2000, "Customizable"],
-    },
-    {
-        name: "pricing_page.whatsapp_notification",
-        compare: [null, null, null, 200, "Customizable"],
-    },
-    {
-        name: "pricing_page.multiple_schedules",
+        name: "pricing_page.cloud_recording",
         compare: [null, "check", "check", "check", "check"],
     },
     {
-        name: "pricing_page.webhook_notification",
+        name: "pricing_page.video_vault",
         compare: [null, null, "check", "check", "check"],
     },
     {
-        name: "pricing_page.slack_notification",
-        compare: [null, null, "check", "check", "check"],
+        name: "pricing_page.custom_recording_schedules",
+        compare: [null, null, "Comming soon", "Comming soon", "Customizable"],
     },
     {
-        name: "pricing_page.microsoft_team_nofification",
-        compare: [null, null, "check", "check", "check"],
+        name: "pricing_page.long_term_video_archival",
+        compare: [null, null, null, "Comming soon", "Comming soon"],
+    },
+    {
+        name: "pricing_page.cloud_storage",
+        compare: [null, null, null, "Comming soon", "Comming soon"],
     },
 ];
 
-export const Notification = () => {
+export const VideoStorage = () => {
     const { t } = useTranslation();
     return (
         <PageLayout>
-            <Title>{t("pricing_page.notification_tab")}</Title>
+            <Title>{t("pricing_page.video_storage")}</Title>
             {features.map((feature) => (
                 <FeatureItem feature={feature} key={feature.name} />
             ))}
