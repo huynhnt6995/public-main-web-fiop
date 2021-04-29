@@ -6,17 +6,21 @@ import { PageLayout } from "../layout/PageLayout";
 export const PricingHeader = () => {
     const { t } = useTranslation();
     return (
-        <PageLayout
-            containerStyle={{
-                background: `url("assets/images/img_contact_background.png") no-repeat left top, linear-gradient(78.03deg, rgba(119, 88, 237, 0.05) 0%, rgba(255, 255, 255, 0) 100%), #FAFCFF`,
-                backgroundSize: "100% 100%",
-                paddingTop: 80,
-                paddingBottom: 80,
-            }}
-        >
-            <Title>{t("pricing_page.pricing")}</Title>
-            <Discription>{t("pricing_page.pricing_discription")}</Discription>
-        </PageLayout>
+        <div className="table-responsive">
+            <PageLayout
+                containerStyle={{
+                    background: `url("assets/images/img_contact_background.png") no-repeat left top, linear-gradient(78.03deg, rgba(119, 88, 237, 0.05) 0%, rgba(255, 255, 255, 0) 100%), #FAFCFF`,
+                    backgroundSize: "100% 100%",
+                    paddingTop: 80,
+                    paddingBottom: 80,
+                }}
+            >
+                <Title>{t("pricing_page.pricing")}</Title>
+                <Discription>
+                    {t("pricing_page.pricing_discription")}
+                </Discription>
+            </PageLayout>
+        </div>
     );
 };
 

@@ -8,7 +8,7 @@ import { VideoStream } from "./VideoStream";
 
 export const BilledMonthlyTab = () => {
     return (
-        <div>
+        <div className="table-responsive">
             <CompareFeatures />
             <VideoStream />
             <Notification />
