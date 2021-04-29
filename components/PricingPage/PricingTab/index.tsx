@@ -13,7 +13,9 @@ export const PricingTab = () => {
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
                     <li className="nav-item">
                         <TabControllerWrap
-                            className={`nav-link ${tab === 0 && "active"}`}
+                            className={
+                                tab === 0 ? "active nav-link" : "nav-link"
+                            }
                             id="billed-monthly-tab"
                             data-toggle="tab"
                             href="#billed-monthly"
@@ -37,7 +39,9 @@ export const PricingTab = () => {
                     </li>
                     <li className="nav-item">
                         <TabControllerWrap
-                            className={`nav-link ${tab === 1 && "active"}`} //active
+                            className={
+                                tab === 1 ? "active nav-link" : "nav-link"
+                            }
                             id="billed-annually-tab"
                             data-toggle="tab"
                             href="#billed-annually"
@@ -62,7 +66,11 @@ export const PricingTab = () => {
                     </li>
                 </ul>
             </div>
-            <div className="tab-content" id="myTabContent">
+            <div
+                className="tab-content"
+                id="myTabContent"
+                style={{ width: "100%", paddingTop: 30 }}
+            >
                 <div
                     className={`tab-pane fade ${tab === 0 && "show active"}`}
                     id="billed-monthly"

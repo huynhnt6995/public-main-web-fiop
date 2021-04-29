@@ -237,8 +237,16 @@
     },
     "pricing_page": {
         "pricing": "Pricing",
+        "compare_features": "Compare features",
         "pricing_discription": "Choose product to get the ideal plan for your security system",
         "billed_monthly_tab": "Billed monthly",
-        "billed_annually_tab": "Billed annually"
+        "billed_annually_tab": "Billed annually",
+        "notification": "Notifications with schedules and recipients for 1 device",
+        "best_for_user": "Best for individual users",
+        "multi_user": "Multiple users, enhanced support",
+        "best_plan": "Best plan for the pros",
+        "amplify": "Amplify your notifications and video with one-on-one support and custom integration",
+        "select_ip": "You have selected",
+        "ip": "IP camera license"
     }
 }

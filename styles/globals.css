@@ -17,3 +17,32 @@ a {
 * {
     box-sizing: border-box;
 }
+
+/* #pricing-range {
+    background-color: red;
+} */
+
+input[type="range"] {
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #dedede;
+    height: 4px;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #6065ea 0%, #3a3ea6 100%);
+    margin-top: -6px;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
