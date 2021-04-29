@@ -11,27 +11,27 @@ const features: FeatureModel[] = [
         compare: [null, null, null, null, "Customizable"],
     },
     {
-        name: "pricing_page.email_notification",
+        name: "pricing_page.device",
         compare: [1, 5, 20, 50, "Customizable"],
     },
     {
-        name: "pricing_page.sms_notification",
+        name: "pricing_page.livestream",
         compare: [null, "check", "check", "check", "check"],
     },
     {
-        name: "pricing_page.whatsapp_notification",
+        name: "pricing_page.video_sharing",
         compare: [null, null, "check", "check", "check"],
     },
     {
-        name: "pricing_page.multiple_schedules",
+        name: "pricing_page.concierge_device_provisioning",
         compare: [null, null, null, null, "check"],
     },
     {
-        name: "pricing_page.slack_notification",
+        name: "pricing_page.livestream_into_your_website",
         compare: [null, null, "Comming soon", "Comming soon", "Comming soon"],
     },
     {
-        name: "pricing_page.microsoft_team_nofification",
+        name: "pricing_page.timelapse",
         compare: [null, null, null, "Comming soon", "Comming soon"],
     },
 ];

@@ -250,12 +250,21 @@
         "ip": "IP camera license",
         "video_streaming": "Video streaming",
         "ip_camera_licenses": "IP Camera Licenses",
+        "device": "Device",
+        "livestream": "Livesteam",
+        "video_sharing": "Video sharing",
+        "concierge_device_provisioning": "Concierge Device Provisioning",
+        "livestream_into_your_website": "Livestream into your website",
+        "timelapse": "Timelapse",
         "email_notification": "Email Notification",
         "sms_notification": "SMS Notification",
         "whatsapp_notification": "WhatsApp Notification",
         "multiple_schedules": "Multiple Schedules",
         "slack_notification": "Slack Notification",
         "microsoft_team_nofification": "Microsoft Notification",
+        "notification_tab": "Notification",
+        "notification_retention_days": "Notification Retention Days",
+        "webhook_notification": "Webhook Notification",
         "": ""
     }
 }
