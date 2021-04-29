@@ -9,24 +9,15 @@ export const ContactForm = () => {
     return (
         <Wrapper>
             <PageLayout>
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        height: "100%",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        paddingTop: 80,
-                        paddingBottom: 80,
-
-                    }}
-                >
-                    <Title>{t("industry_page.need_a_custom_solution")}</Title>
-                    <Discrition>
-                        {t("industry_page.need_a_custom_solution_content")}
-                    </Discrition>
-                    <FormInput />
-                </div>
+                <WrapperContent>
+                    <Content>
+                        <Title>{t("industry_page.need_a_custom_solution")}</Title>
+                        <Discrition>
+                            {t("industry_page.need_a_custom_solution_content")}
+                        </Discrition>
+                        <FormInput />
+                    </Content>
+                </WrapperContent>
             </PageLayout>
         </Wrapper>
     );
@@ -56,3 +47,17 @@ const Discrition = styled.label`
 
     color: #fff;
 `;
+const WrapperContent = styled.div`
+    display : flex;
+    justify-content : center;
+`
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width : 65%;
+`

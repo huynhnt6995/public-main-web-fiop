@@ -24,7 +24,9 @@ const BannerContent = () => {
                 <div
                     style={{
                         padding: '24px 45px',
-                        background: 'rgba(255, 255, 255, 0.75)',
+                        background: `rgba(255, 255, 255, 0.75)`,
+                        border: `1px solid #FFFFFF`,
+                        boxSizing: `border-box`,
                     }}
                 >
                     <BannerDiscription style = {{marginBottom : 0}}>
@@ -60,6 +62,7 @@ const Wrapper = styled.div`
 `;
 const BackgroundImg = styled.img`
     width: 100%;
+    height : 55vh;
     
 `;
 const WrapperContent = styled.div`
@@ -90,7 +93,6 @@ const BannerTitle = styled.p`
 
 const BannerLabel = styled.p`
     font-family: Poppins;
-    font-style: normal;
     font-weight: 500;
     line-height: 54px;
     margin-bottom : 0 ;
@@ -110,20 +112,7 @@ const BannerLabel = styled.p`
 
 const BannerDiscription = styled.p`
     font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
     line-height: 200%;
-    margin-botton : 0;
-    @media (min-width: 576px) {
-        font-size: 10px;
-    }
-    @media (min-width: 768px) {
-        font-size: 11px;
-    }
-    @media (min-width: 992px) {
-        font-size: 12px;
-    }
-    @media (min-width: 1376px) {
-        font-size: 13px;
-    }
+    margin-bottom : 0;
+    font-size : 13px;
 `;

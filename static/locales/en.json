@@ -25,7 +25,8 @@
         "help_center": "Help center",
         "term_of_use": "Term of use",
         "privacy": "Privacy",
-        "login": "Login"
+        "login": "Login",
+        "": ""
     },
     "form": {
         "enter_your_email_here": "Enter your email here",

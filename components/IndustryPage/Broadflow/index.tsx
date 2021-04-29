@@ -12,7 +12,7 @@ export interface BroadflowModel {
 
 }
 
-const broadflowService : BroadflowModel [] = [
+const broadflowServices : BroadflowModel [] = [
     {
         imgUrl : 'assets/images/img_cloud_surveillance.png',
         title : 'industry_page.cloud_surveillance',
@@ -57,18 +57,18 @@ export const Broadflow = () => {
         <PageLayout
          containerStyle = {{
             background : 'linear-gradient(78.03deg,rgba(119, 88, 237, 0.05) 0%,rgba(255, 255, 255, 0) 100%),#fafcff',
-            paddingBottom : '80px'
-        }}   
-        >
-                <WrapperTitle>
-                    <Title>
-                     {t("industry_page.broadflow")}
-                    </Title>
-                </WrapperTitle>
-                <div>
-                  {broadflowService.map(service =>(
-                    <BroadflowItem broadflow = {service}/>))}
-                </div>
+            paddingBottom : 80,
+            paddingTop : 30,
+        }} >
+            <WrapperTitle>
+                <Title>
+                    {t("industry_page.broadflow")}
+                </Title>
+            </WrapperTitle>
+            <div>
+                {broadflowServices.map(service =>(
+                <BroadflowItem broadflow = {service}/>))}
+            </div>
         </PageLayout>
     </>)
 }
@@ -78,9 +78,23 @@ const WrapperTitle = styled.div`
 `
 const Title = styled.p`
     font-family: Poppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 54px;
     text-align: center;
+    @media (min-width: 350px) {
+        font-size: 10px;
+    }
+    @media (min-width: 576px) {
+        font-size: 20px;
+    }
+    @media (min-width: 768px) {
+        font-size: 25px;
+    }
+    @media (min-width: 992px) {
+        font-size: 30px;
+    }
+    @media (min-width: 1376px) {
+        font-size: 36px;
+    }
 `

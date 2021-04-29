@@ -79,7 +79,7 @@ const Button = styled.button`
     line-height: 22px;
     color: #5156D3;
     border:none;
-    padding : 5px 6px
+    padding : 5px 6px;
 `
 const Icon = styled.img`
     margin-right :  5px;
