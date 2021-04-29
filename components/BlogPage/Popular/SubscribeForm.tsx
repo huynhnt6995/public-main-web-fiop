@@ -6,7 +6,7 @@ import { PriamyButton } from "../../button/PriamyButton";
 export const SubscribeForm = () => {
     const { t } = useTranslation();
     return (
-        <Form style={{ minWidth: 320, marginTop: 40 }}>
+        <Form style={{ minWidth: 200, marginTop: 40 }}>
             <Form.Group controlId="formBasicEmail">
                 <Form.Control
                     type="email"

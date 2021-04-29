@@ -81,7 +81,7 @@ export const AppFooter = () => {
                     >
                         <img
                             src="/assets/images/img_logo.png"
-                            style={{ width: 141, height: 38 }}
+                            style={{ width: 141, height: "auto", resize: "both" }}
                         />
                         <FooterItemLabel>
                             {t("footer_app.discription")}

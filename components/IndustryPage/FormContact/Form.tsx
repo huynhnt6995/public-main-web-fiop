@@ -6,7 +6,7 @@ import { PriamyButton } from "../../button/PriamyButton";
 export const FormInput = () => {
     const { t } = useTranslation();
     return (
-        <Form style={{ textAlign: "center", width: "45%", minWidth: 320 }}>
+        <Form style={{ textAlign: "center", width: "75%", minWidth: 320 }}>
             <Form.Group controlId="formBasicEmail">
                 <Form.Control
                     type="email"

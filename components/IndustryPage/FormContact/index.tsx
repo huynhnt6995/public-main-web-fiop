@@ -11,7 +11,9 @@ export const ContactForm = () => {
             <PageLayout>
                 <WrapperContent>
                     <Content>
-                        <Title>{t("industry_page.need_a_custom_solution")}</Title>
+                        <Title>
+                            {t("industry_page.need_a_custom_solution")}
+                        </Title>
                         <Discrition>
                             {t("industry_page.need_a_custom_solution_content")}
                         </Discrition>
@@ -28,7 +30,7 @@ const Wrapper = styled.div`
     background: url("assets/images/img_contact_background.png") no-repeat left
             top,
         linear-gradient(180deg, #6065ea 0%, #3a3ea6 100%);
-    height: 100%;
+    background-size: 100% 100%;
 `;
 
 const Title = styled.p`
@@ -48,9 +50,9 @@ const Discrition = styled.label`
     color: #fff;
 `;
 const WrapperContent = styled.div`
-    display : flex;
-    justify-content : center;
-`
+    display: flex;
+    justify-content: center;
+`;
 const Content = styled.div`
     display: flex;
     flex-direction: column;
@@ -59,5 +61,5 @@ const Content = styled.div`
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    width : 65%;
-`
+    width: 65%;
+`;
