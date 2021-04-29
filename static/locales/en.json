@@ -272,6 +272,13 @@
         "custom_recording_schedules": "Custom Recording Schedules",
         "long_term_video_archival": "Long Term Video Archival",
         "cloud_storage": "Cloud Storage",
+        "management": "Management",
+        "user_management": "User Management",
+        "activity_log": "Activity Log",
+        "custome_brand_logo": "Custom Brand Logo",
+        "support": "Support",
+        "email_chat_support": "Email/Chat Support",
+        "phone_support": "Phone Support",
         "": ""
     }
 }
