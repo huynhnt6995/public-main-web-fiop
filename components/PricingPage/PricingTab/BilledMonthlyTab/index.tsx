@@ -59,7 +59,7 @@ export const BilledMonthlyTab = () => {
                     <Title>{t("pricing_page.compare_features")}</Title>
                 </div>
                 <div className="col-9">
-                    <div className="row">
+                    <div className="d-flex">
                         {compareFeatures.map((feature) => (
                             <CompareFeatures
                                 feature={feature}

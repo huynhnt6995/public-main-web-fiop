@@ -247,6 +247,15 @@
         "best_plan": "Best plan for the pros",
         "amplify": "Amplify your notifications and video with one-on-one support and custom integration",
         "select_ip": "You have selected",
-        "ip": "IP camera license"
+        "ip": "IP camera license",
+        "video_streaming": "Video streaming",
+        "ip_camera_licenses": "IP Camera Licenses",
+        "email_notification": "Email Notification",
+        "sms_notification": "SMS Notification",
+        "whatsapp_notification": "WhatsApp Notification",
+        "multiple_schedules": "Multiple Schedules",
+        "slack_notification": "Slack Notification",
+        "microsoft_team_nofification": "Microsoft Notification",
+        "": ""
     }
 }

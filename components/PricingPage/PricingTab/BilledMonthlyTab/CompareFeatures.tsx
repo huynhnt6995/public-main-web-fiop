@@ -56,21 +56,10 @@ const Wrap = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    height: 250px;
+    height: 280px;
+    width: 20%;
+    min-width: 161px;
     margin-bottom: 20px;
-    @media (min-width: 350px) {
-        width: 100%;
-    }
-    @media (min-width: 576px) {
-        width: 50%;
-    }
-    @media (min-width: 992px) {
-        width: 33%;
-    }
-    @media (min-width: 1258px) {
-        width: 20%;
-    }
 `;
 
 const Title = styled.p`
@@ -100,7 +89,7 @@ const Month = styled.span`
 const Discription = styled.p`
     font-family: "Poppins";
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
     text-align: center;
     height: 100%;
     color: #999999;
